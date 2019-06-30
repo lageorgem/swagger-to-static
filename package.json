@@ -1,6 +1,6 @@
 {
   "name": "swagger-to-static",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts a JSON or YML swagger spec to a static HTML page",
   "main": "index.js",
   "scripts": {
