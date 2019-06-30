@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
 const path = require("path");
 const fs = require("fs");
 
-const template = fs.readFileSync("template.html");
+const template = fs.readFileSync(`${__dirname}/template.html`);
 const parser = new ArgumentParser({
     version: "0.0.1",
     addHelp: true,
