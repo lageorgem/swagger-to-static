@@ -1,0 +1,29 @@
+{
+  "name": "swagger-to-static",
+  "version": "1.0.0",
+  "description": "Converts a JSON or YML swagger spec to a static HTML page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmlazu/swagger-to-static.git"
+  },
+  "keywords": [
+    "swagger",
+    "json",
+    "yml",
+    "html"
+  ],
+  "author": "Lazu George Mihai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmlazu/swagger-to-static/issues"
+  },
+  "homepage": "https://github.com/gmlazu/swagger-to-static#readme",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "js-yaml": "^3.13.1"
+  }
+}
