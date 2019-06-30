@@ -32,5 +32,11 @@ switch (fileType.toLowerCase()) {
         process.exit(-1);
 }
 
+if (!fs.existsSync(args.TARGET)) {
+    fs.mkdirSync(args.TARGET);
+}
+
 const output = template.toString().replace("{{{spec}}}", JSON.stringify(swaggerSpec));
 fs.writeFileSync(`${args.TARGET}/index.html`, output);
+
+console.log(`Swagger docs generated at ${args.TARGET}`);
