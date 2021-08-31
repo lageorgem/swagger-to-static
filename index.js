@@ -21,7 +21,7 @@ let swaggerSpec = null;
 
 switch (fileType.toLowerCase()) {
     case ".json":
-        swaggerSpec = fs.readFileSync(args.FILE, "utf8").toJSON();
+        swaggerSpec = JSON.parse(fs.readFileSync(args.FILE, "utf8"));
         break;
     case ".yml":
         const yml = fs.readFileSync(args.FILE, "utf8");
