@@ -4,14 +4,16 @@
   "description": "Converts a JSON or YML swagger spec to a static HTML page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gmlazu/swagger-to-static.git"
   },
   "keywords": [
+    "generate",
     "swagger",
+    "swagger-ui",
     "json",
     "yml",
     "html"
