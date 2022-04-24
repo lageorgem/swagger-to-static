@@ -25,5 +25,8 @@
   "dependencies": {
     "argparse": "^1.0.10",
     "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "release-it": "^14.14.2"
   }
 }

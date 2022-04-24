@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
 const path = require("path");
 const fs = require("fs");
 
-const template = fs.readFileSync(`${__dirname}/template.html`);
+const swaggerUI = fs.readFileSync(`${__dirname}/index.html`);
 const parser = new ArgumentParser({
     version: "0.0.1",
     addHelp: true,
@@ -36,7 +36,7 @@ if (!fs.existsSync(args.TARGET)) {
     fs.mkdirSync(args.TARGET);
 }
 
-const output = template.toString().replace("{{{spec}}}", JSON.stringify(swaggerSpec));
-fs.writeFileSync(`${args.TARGET}/index.html`, output);
+fs.writeFileSync(`${args.TARGET}/index.html`, swaggerUI);
+fs.writeFileSync(`${args.TARGET}/spec.json`, JSON.stringify(swaggerSpec));
 
 console.log(`Swagger docs generated at ${args.TARGET}`);
