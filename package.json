@@ -29,6 +29,6 @@
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {
-    "release-it": "^14.14.2"
+    "release-it": "^15.6.0"
   }
 }
